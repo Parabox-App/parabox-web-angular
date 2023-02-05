@@ -10,6 +10,10 @@
   },
   "private": true,
   "dependencies": {
+    "@fortawesome/angular-fontawesome": "0.12.1",
+    "@fortawesome/fontawesome-svg-core": "6.2.1",
+    "@fortawesome/free-solid-svg-icons": "6.2.1",
+    "@fortawesome/free-brands-svg-icons": "6.2.1",
     "@material/web": "^1.0.0-pre.1",
     "@angular/material": "^15.1.3",
     "@angular/animations": "^15.1.0",

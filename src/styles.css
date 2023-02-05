@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Google Sans Display';
+  src: url('./assets/fonts/google_sans_display_regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Google Sans Text';
+  src: url('./assets/fonts/google_sans_text_regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #1A1C18;
+}
