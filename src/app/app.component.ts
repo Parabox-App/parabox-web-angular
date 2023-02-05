@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import '@material/web/button/filled-button.js';
 import '@material/web/button/outlined-button.js';
 import '@material/web/iconbutton/standard-icon-button.js';
@@ -16,6 +16,7 @@ import '@material/web/ripple/ripple.js';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import {MatDrawerMode} from "@angular/material/sidenav";
+import {fromEvent} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -39,10 +40,20 @@ export class AppComponent {
         this.defaultNavOpened = true
       }
     });
+    document.addEventListener('scroll', () => {
+      this.pageScrolled = window.pageYOffset != 0
+    })
   }
+
   title = 'parabox-web-angular';
   faGithub = faGithub
 
   navMode: MatDrawerMode = "push"
   defaultNavOpened = true
+  pageScrolled = false
+
+
+  testClick(){
+
+  }
 }

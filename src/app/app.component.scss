@@ -1,3 +1,7 @@
+$primary: #9FD67C;
+$onPrimary: #113800;
+$secondary: #BDCBAF;
+$onSecondary: #283420;
 $surface: #1A1C18;
 $onSurface: #E3E3DC;
 $primaryContainer: #235105;
@@ -37,8 +41,32 @@ $secondaryContainer: #3E4A35;
   --md-sys-color-scrim: #000000;
 }
 
+.fab{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.toolbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 99;
+  transition: background-color .5s;
+  background-color: transparent;
+}
+
+.toolbar-scrolled {
+  background-color: $secondaryContainer;
+}
+
 
 .container{
+  margin-top: 64px;
   width: 100%;
 }
 
@@ -76,11 +104,18 @@ $secondaryContainer: #3E4A35;
   font-family: "Google Sans Text", serif;
 }
 
+.sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
 .nav-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $surface;
+  padding-top: 74px;
 }
 
 .nav-item {
@@ -138,6 +173,48 @@ $secondaryContainer: #3E4A35;
 
 .subject-text-container .buttons{
   display: flex;
+  flex-direction: row;
+}
+
+.button-filled {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+  font-size: 18px;
+  background-color: $primary;
+  color: $onPrimary;
+  margin: 0 20px 0 0 ;
+  transition: border-radius .2s;
+}
+
+.button-outlined {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+  font-size: 18px;
+  color: $primary;
+  border: 1px solid $primary;
+  transition: border-radius .2s;
+}
+
+.button-filled:active{
+  border-radius: 10px;
+}
+
+.button-outlined:hover{
+  background-color: $secondaryContainer;
+}
+
+.button-outlined:active{
+  border-radius: 10px;
 }
 
 .subject-text-container .buttons .button{

@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar class="toolbar" [class.toolbar-scrolled]="pageScrolled">
   <mat-toolbar-row>
     <md-standard-icon-button (click)="drawer.toggle()">
       <md-icon class="icon" *ngIf="!drawer.opened">menu</md-icon>
@@ -9,17 +9,21 @@
       <span class="version-tag-text">1.0.1</span>
     </div>
     <div class="spacer"></div>
-    <md-standard-icon-button>
-      <fa-icon class="icon" [icon]="faGithub"></fa-icon>
-    </md-standard-icon-button>
+    <a href="https://github.com/Parabox-App/Parabox" target="_blank">
+      <md-standard-icon-button>
+        <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+      </md-standard-icon-button>
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" [mode]="navMode" [opened]="defaultNavOpened">
     <div class="nav-container">
-      <div class="nav-item">
-        <span class="nav-item-text">主页</span>
-      </div>
+      <a href="#">
+        <div class="nav-item" >
+          <span class="nav-item-text">主页</span>
+        </div>
+      </a>
       <div class="nav-item">
         <span class="nav-item-text">快速开始</span>
       </div>
@@ -41,8 +45,12 @@
         <h1>原生 Android 上的即时通讯体验</h1>
         <h2>界面友好，功能完善，可拓展的即时通讯客户端。</h2>
         <div class="buttons">
-          <md-filled-button label="快速开始" class="dark button"></md-filled-button>
-          <md-outlined-button label="了解更多" class="dark button"></md-outlined-button>
+          <div class="button-filled">
+            快速开始
+          </div>
+          <div class="button-outlined">
+            了解更多
+          </div>
         </div>
       </div>
       <div class="subject-image-container">
@@ -54,5 +62,6 @@
     <div class="feature">
 
     </div>
+    <md-fab-extended label="获取" icon="download" class="fab dark"></md-fab-extended>
   </div>
 </mat-drawer-container>
