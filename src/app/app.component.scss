@@ -143,6 +143,10 @@ $secondaryContainer: #3E4A35;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
+.content{
+  max-width: 1366px;
+}
+
 .subject {
   display: flex;
   flex-direction: row;
@@ -181,7 +185,7 @@ $secondaryContainer: #3E4A35;
 }
 
 .button-filled {
-  width: 160px;
+  width: fit-content;
   height: 50px;
   border-radius: 25px;
   display: flex;
@@ -193,10 +197,11 @@ $secondaryContainer: #3E4A35;
   color: $onPrimary;
   margin: 0 20px 0 0 ;
   transition: all .2s;
+  white-space:nowrap;
 }
 
 .button-outlined {
-  width: 160px;
+  width: fit-content;
   height: 50px;
   border-radius: 25px;
   display: flex;
@@ -207,6 +212,7 @@ $secondaryContainer: #3E4A35;
   color: $primary;
   border: 1px solid $primary;
   transition: all .2s;
+  white-space:nowrap;
 }
 
 .button-filled:active{
@@ -378,7 +384,7 @@ $secondaryContainer: #3E4A35;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-  margin: 0 20px 15px 20px;
+  padding: 0 20px 15px 20px;
 }
 
 .resource-card-content{
@@ -386,7 +392,117 @@ $secondaryContainer: #3E4A35;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.download {
+  height: 480px;
+  margin: 0 120px;
+  border-radius: 36px;
+  border: 1px solid #283420;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.download-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-image img{
+  height: 60%;
+}
+
+.download-detail{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.download-title {
+  font-size: 42px;
+  font-weight: normal;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+}
+
+.download-detail .button-filled{
+  margin: 18px 0 0 0;
+}
+
+.download-detail .button-outlined{
+  margin: 12px 0 0 0;
+}
+
+.download .button-filled fa-icon{
+  margin: 0 0 0 32px;
+}
+.download .button-filled span{
+  margin: 0 10px;
+}
+.download .button-filled md-icon{
+  color: $onPrimary;
+  margin: 0 32px 0 0;
+}
+
+.download .button-outlined fa-icon{
+  margin: 0 0 0 32px;
+}
+.download .button-outlined span{
+  margin: 0 32px 0 10px;
+}
+
+.bottom-block {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondaryContainer;
+  margin: 40px 120px;
+  border-radius: 36px;
+}
+
+.bottom-block-icon img {
+  width: 48px;
+  height: 48px;
+  margin: 24px;
+}
+
+.bottom-block-content{
+  width: 60%;
+  margin: 0 32px 24px 32px;
+  font-size: 14px;
+}
+
+.bottom-block-buttons{
+  display: flex;
+  margin: 0 0 0 32px;
+  flex-direction: row;
+}
+
+.bottom-block-buttons md-text-button {
+  margin-right: 10px;
+}
+
+.bottom-block-divider{
+  width: 100%;
+  height: 1px;
+  background-color: $surface;
+}
+
+.bottom-block-bar{
+  height: 88px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.bottom-block-bar span{
+  font-size: 22px;
+  font-family: "Google Sans Display", serif;
+  margin: 0 32px;
 }
 
 /* Responsive Styles */
@@ -432,6 +548,19 @@ $secondaryContainer: #3E4A35;
   .resources {
     margin: 40px 80px;
   }
+  .download {
+    margin: 0 80px;
+  }
+  .download-image{
+    display: none;
+  }
+
+  .bottom-block {
+    margin: 40px 80px;
+  }
+  .bottom-block-content{
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -443,6 +572,13 @@ $secondaryContainer: #3E4A35;
     font-size: 40px;
   }
   .resources {
+    margin: 40px 40px;
+  }
+  .download {
+    margin: 0 40px;
+  }
+
+  .bottom-block {
     margin: 40px 40px;
   }
 }

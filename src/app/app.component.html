@@ -32,7 +32,7 @@
         <span class="nav-item-text">文档</span>
       </div>
       <div class="nav-item">
-        <span class="nav-item-text">使用协议</span>
+        <span class="nav-item-text">用户协议</span>
       </div>
       <div class="nav-item">
         <span class="nav-item-text">隐私政策</span>
@@ -47,10 +47,10 @@
         <h2>界面友好，功能完善，可拓展的即时通讯客户端。</h2>
         <div class="buttons">
           <div class="button-filled">
-            快速开始
+            <span style="margin: 0 40px">快速开始</span>
           </div>
           <div class="button-outlined">
-            了解更多
+            <span style="margin: 0 40px">了解更多</span>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@
               <span>开发者工具包</span>
             </div>
             <div class="resource-card-content text-primary">
-              <span>包含快速启动 Parabox 插件开发所需的预定义类和实用程序的开发工具包。</span>
+              <span>包含快速启动 Parabox 扩展开发所需的预定义类和实用程序的开发工具包。</span>
             </div>
           </div>
         </mat-grid-tile>
@@ -136,7 +136,7 @@
               <fa-icon class="icon" [icon]="faNewspaper"></fa-icon>
             </div>
             <div class="resource-card-title text-primary">
-              <span>博客：EFB-Parabox-Master 使用教程</span>
+              <span>博文：EFB-Parabox-Master 使用教程</span>
             </div>
             <div class="resource-card-content text-primary">
               <span>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</span>
@@ -149,16 +149,59 @@
               <fa-icon class="icon" [icon]="faBook"></fa-icon>
             </div>
             <div class="resource-card-title text-primary">
-              <span>CodeLab：从模板项目开始</span>
+              <span>从模板项目开始</span>
             </div>
             <div class="resource-card-content text-primary">
-              <span>模板项目包含了开发工具包，并完成了基本的架构设置。你可以从中快速开始开发你的扩展。</span>
+              <span>模板项目已包含开发工具包和基本的架构设置。可从中快速开始扩展开发。</span>
             </div>
           </div>
         </mat-grid-tile>
       </mat-grid-list>
     </div>
-    <div class="download"></div>
-    <md-fab-extended label="获取" icon="download" class="fab dark"></md-fab-extended>
+    <div style="height: 128px"></div>
+    <div class="download">
+      <div class="download-image">
+        <img src="./assets/standing-11.png">
+      </div>
+      <div class="download-detail">
+        <div class="download-title text-primary">
+          即刻获取
+        </div>
+        <div class="button-filled">
+          <fa-icon [icon]="faGooglePlay"></fa-icon>
+          <span>Google Play</span>
+          <md-icon class="icon">arrow_forward</md-icon>
+        </div>
+        <div class="button-outlined">
+          <fa-icon [icon]="faGithub"></fa-icon>
+          <span>Github</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom-block">
+      <div class="bottom-block-icon">`
+        <img src="./assets/favicon.png" alt="icon">
+      </div>
+      <div class="bottom-block-content text-primary">
+        Parabox 是一款界面友好，功能完善，可拓展的即时通讯客户端。界面遵循 Material You 设计语言。
+      </div>
+<!--      <div class="bottom-block-buttons">-->
+<!--        <md-text-button label="用户协议" class="dark"></md-text-button>-->
+<!--        <md-text-button label="隐私政策" class="dark"></md-text-button>-->
+<!--      </div>-->
+      <div class="bottom-block-divider"></div>
+      <div class="bottom-block-bar">
+        <span class="text-primary">Parabox</span>
+        <div class="spacer"></div>
+        <md-standard-icon-button style="margin-right: 10px;">
+          <fa-icon [icon]="faTelegram" class="icon"></fa-icon>
+        </md-standard-icon-button>
+        <md-standard-icon-button style="margin-right: 32px;">
+          <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+        </md-standard-icon-button>
+      </div>
+    </div>
+<!--    <md-fab-extended label="即刻获取" icon="download" class="fab dark"></md-fab-extended>-->
   </div>
 </mat-drawer-container>

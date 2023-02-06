@@ -1,6 +1,7 @@
 import {Component, HostListener} from '@angular/core';
 import '@material/web/button/filled-button.js';
 import '@material/web/button/outlined-button.js';
+import '@material/web/button/text-button.js';
 import '@material/web/iconbutton/standard-icon-button.js';
 import '@material/web/navigationbar/navigation-bar.js';
 import '@material/web/navigationdrawer/navigation-drawer.js';
@@ -14,10 +15,10 @@ import '@material/web/list/list-item.js';
 import '@material/web/ripple/ripple.js';
 import '@material/web/list/list-divider.js';
 
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBook, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faGooglePlay, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faBook, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import {MatDrawerMode} from "@angular/material/sidenav";
+import { MatDrawerMode } from "@angular/material/sidenav";
 import {fromEvent} from "rxjs";
 
 @Component({
@@ -58,6 +59,9 @@ export class AppComponent {
 
   title = 'parabox-web-angular';
   faGithub = faGithub
+  faGooglePlay = faGooglePlay
+  faTelegram = faTelegram
+  faEnvelope = faEnvelope
   faBook = faBook
   faNewspaper = faNewspaper
 
