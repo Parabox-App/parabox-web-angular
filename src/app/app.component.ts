@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
 import '@material/web/button/filled-button.js';
 import '@material/web/button/outlined-button.js';
 import '@material/web/button/text-button.js';
@@ -20,11 +20,20 @@ import { faBook, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-ico
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { MatDrawerMode } from "@angular/material/sidenav";
 import {fromEvent} from "rxjs";
+import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('myTrigger', [
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 1 })),
+      transition('void => *', [animate('0.5s 0.5s ease-in')]),
+      transition('* => void', [animate('0.5s ease-in')])
+    ])
+  ],
 })
 export class AppComponent {
 
@@ -68,8 +77,22 @@ export class AppComponent {
   navMode: MatDrawerMode = "push"
   defaultNavOpened = true
   pageScrolled = false
-
   columnNum = 2
+  featureNum = 0
+  @ViewChild("download") downloadBlock: ElementRef | undefined;
+  scrollToTop(){
+    window.scrollTo({top: 0, behavior: "smooth"})
+  }
+  scrollToDownload(){
+    // @ts-ignore
+    this.downloadBlock.nativeElement.scrollIntoView({behavior: "smooth"})
+  }
+  featurePlus(){
+    this.featureNum = (this.featureNum + 1) % 3
+  }
+  featureDecrease(){
+    this.featureNum = (this.featureNum - 1) % 3
+  }
 
 
   testClick(){

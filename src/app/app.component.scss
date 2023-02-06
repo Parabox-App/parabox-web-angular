@@ -9,6 +9,7 @@ $onSurfaceVariant: #C4C8BB;
 $primaryContainer: #235105;
 $onPrimaryContainer: #BAF395;
 $secondaryContainer: #3E4A35;
+$onSecondaryContainer: #D9E7CA;
 
 .dark {
   --md-sys-color-primary: #9FD67C;
@@ -273,7 +274,6 @@ $secondaryContainer: #3E4A35;
   align-items: center;
   width: 100%;
   height: 480px;
-  //border: 1px solid #283420;
 }
 
 .title{
@@ -387,6 +387,10 @@ $secondaryContainer: #3E4A35;
   padding: 0 20px 15px 20px;
 }
 
+.resource-card:hover .resource-card-title{
+  color: $onSecondaryContainer;
+}
+
 .resource-card-content{
   font-size: 16px;
   overflow:hidden;
@@ -395,17 +399,60 @@ $secondaryContainer: #3E4A35;
   padding: 0 20px;
 }
 
+.extension{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 120px;
+}
+
+.extension img {
+  width: 64px;
+  height: 64px;
+}
+
+.extension-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 0 64px;
+}
+
+.extension-text-title{
+  font-size: 42px;
+  font-weight: normal;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+}
+
+.extension-text-content{
+  font-size: 16px;
+  color: $onSurfaceVariant;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+}
+
+.extension-github{
+  font-size: 16px;
+}
+
+.extension-github span{
+  color: $primary;
+}
+
 .download {
   height: 480px;
   margin: 0 120px;
   border-radius: 36px;
-  border: 1px solid #283420;
+  border: 2px solid #283420;
   display: flex;
   flex-direction: row;
   align-items: center;
+  //background: url("/assets/poster.png") center center no-repeat;
+  //background-size:cover;
 }
 
 .download-image {
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -417,6 +464,7 @@ $secondaryContainer: #3E4A35;
 }
 
 .download-detail{
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -430,12 +478,18 @@ $secondaryContainer: #3E4A35;
   font-family: "Google Sans Display", "Microsoft YaHei", serif;
 }
 
+.download-content {
+  font-size: 16px;
+  color: $onSurfaceVariant;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+}
+
 .download-detail .button-filled{
-  margin: 18px 0 0 0;
+  margin: 36px 0 0 0;
 }
 
 .download-detail .button-outlined{
-  margin: 12px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .download .button-filled fa-icon{
@@ -473,7 +527,9 @@ $secondaryContainer: #3E4A35;
 .bottom-block-content{
   width: 60%;
   margin: 0 32px 24px 32px;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  color: $onSurfaceVariant;
 }
 
 .bottom-block-buttons{
@@ -548,13 +604,25 @@ $secondaryContainer: #3E4A35;
   .resources {
     margin: 40px 80px;
   }
+  .extension{
+    margin: 40px 80px;
+  }
+  .extension-text-title{
+    font-size: 36px;
+  }
   .download {
     margin: 0 80px;
   }
   .download-image{
     display: none;
   }
-
+  .download-detail{
+    width: 100%;
+    align-items: center;
+  }
+  .download-title{
+    font-size: 36px;
+  }
   .bottom-block {
     margin: 40px 80px;
   }
@@ -574,10 +642,21 @@ $secondaryContainer: #3E4A35;
   .resources {
     margin: 40px 40px;
   }
+  .extension{
+    margin: 40px 40px;
+  }
+  .extension-text{
+    margin: 0 0 0 32px;
+  }
+  .extension-text-title{
+    font-size: 24px;
+  }
   .download {
     margin: 0 40px;
   }
-
+  .download-title{
+    font-size: 30px;
+  }
   .bottom-block {
     margin: 40px 40px;
   }

@@ -20,12 +20,10 @@
   <mat-drawer #drawer class="sidenav" [mode]="navMode" [opened]="defaultNavOpened">
     <div class="nav-container">
       <div style="height: 74px;"></div>
-      <a href="#">
-        <div class="nav-item">
-          <span class="nav-item-text">主页</span>
-        </div>
-      </a>
-      <div class="nav-item">
+      <div class="nav-item" (click)="scrollToTop()">
+        <span class="nav-item-text">主页</span>
+      </div>
+      <div class="nav-item" (click)="scrollToDownload()">
         <span class="nav-item-text">快速开始</span>
       </div>
       <div class="nav-item">
@@ -46,11 +44,11 @@
         <h1>原生 Android 上的即时通讯体验</h1>
         <h2>界面友好，功能完善，可拓展的即时通讯客户端。</h2>
         <div class="buttons">
-          <div class="button-filled">
+          <div class="button-filled" (click)="scrollToDownload()">
             <span style="margin: 0 40px">快速开始</span>
           </div>
           <div class="button-outlined">
-            <span style="margin: 0 40px">了解更多</span>
+            <span style="margin: 0 40px">阅读文档</span>
           </div>
         </div>
       </div>
@@ -65,11 +63,12 @@
     <!--    </div>-->
     <div class="feature">
       <div class="feature-spacer"></div>
-      <md-standard-icon-button class="dark">
+      <md-standard-icon-button class="dark" (click)="featureDecrease()">
         <md-icon class="icon">navigate_before</md-icon>
       </md-standard-icon-button>
       <div class="feature-spacer"></div>
-      <div class="feature-main">
+
+      <div *ngIf="featureNum == 0" class="feature-main">
         <div class="feature-text">
           <div class="feature-subtitle">
           <span>
@@ -93,8 +92,30 @@
         </div>
       </div>
 
+      <div *ngIf="featureNum == 1" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            全局搜索
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            快速定位聊天记录
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>
+              支持对聊天内容，发送人昵称，会话名称等进行字符串匹配搜索，搜索结果一目了然。</p>
+          </div>
+        </div>
+        <div class="feature-image">
+          <img src="">
+        </div>
+      </div>
+
       <div class="feature-spacer"></div>
-      <md-standard-icon-button class="dark">
+      <md-standard-icon-button class="dark" (click)="featurePlus()">
         <md-icon class="icon">navigate_next</md-icon>
       </md-standard-icon-button>
       <div class="feature-spacer"></div>
@@ -136,7 +157,7 @@
               <fa-icon class="icon" [icon]="faNewspaper"></fa-icon>
             </div>
             <div class="resource-card-title text-primary">
-              <span>博文：EFB-Parabox-Master 使用教程</span>
+              <span>博客：EFB-Parabox-Master 使用教程</span>
             </div>
             <div class="resource-card-content text-primary">
               <span>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</span>
@@ -158,8 +179,39 @@
         </mat-grid-tile>
       </mat-grid-list>
     </div>
-    <div style="height: 128px"></div>
-    <div class="download">
+    <div style="height: 32px"></div>
+    <div class="title text-primary">
+      <span>扩展</span>
+    </div>
+    <div class="extension">
+      <img src="./assets/extension_auto.png">
+      <div class="extension-text">
+        <div class="extension-text-title text-primary">
+          <span>Parabox Extension Auto</span>
+        </div>
+        <div class="extension-text-content text-primary">
+          <span>结合 Android Auto 特性的通知监听。</span>
+        </div>
+      </div>
+    </div>
+    <div class="extension">
+      <img src="./assets/extension_ws.png">
+      <div class="extension-text">
+        <div class="extension-text-title text-primary">
+          <span>Parabox Extension WS</span>
+        </div>
+        <div class="extension-text-content text-primary">
+          <span>允许 Parabox 通过 websocket 协议与私有服务器交换数据。</span>
+        </div>
+      </div>
+    </div>
+    <div class="extension extension-github text-primary">
+      <p>前往 <a href="https://github.com/topics/parabox-extension" target="_blank"><span>Github Topic</span></a>
+        获取来自社区的更多扩展。</p>
+    </div>
+
+    <div style="height: 32px"></div>
+    <div class="download" #download>
       <div class="download-image">
         <img src="./assets/standing-11.png">
       </div>
@@ -167,15 +219,22 @@
         <div class="download-title text-primary">
           即刻获取
         </div>
-        <div class="button-filled">
-          <fa-icon [icon]="faGooglePlay"></fa-icon>
-          <span>Google Play</span>
-          <md-icon class="icon">arrow_forward</md-icon>
+        <div class="download-content">
+          感受最为纯粹与实用的原生 Android 即时通讯体验。
         </div>
-        <div class="button-outlined">
-          <fa-icon [icon]="faGithub"></fa-icon>
-          <span>Github</span>
-        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.ojhdtapp.parabox" target="_blank">
+          <div class="button-filled">
+            <fa-icon [icon]="faGooglePlay"></fa-icon>
+            <span>Google Play</span>
+            <md-icon class="icon">arrow_forward</md-icon>
+          </div>
+        </a>
+        <a href="https://github.com/Parabox-App/Parabox/releases" target="_blank">
+          <div class="button-outlined">
+            <fa-icon [icon]="faGithub"></fa-icon>
+            <span>Github</span>
+          </div>
+        </a>
       </div>
 
     </div>
@@ -183,13 +242,13 @@
       <div class="bottom-block-icon">`
         <img src="./assets/favicon.png" alt="icon">
       </div>
-      <div class="bottom-block-content text-primary">
+      <div class="bottom-block-content">
         Parabox 是一款界面友好，功能完善，可拓展的即时通讯客户端。界面遵循 Material You 设计语言。
       </div>
-<!--      <div class="bottom-block-buttons">-->
-<!--        <md-text-button label="用户协议" class="dark"></md-text-button>-->
-<!--        <md-text-button label="隐私政策" class="dark"></md-text-button>-->
-<!--      </div>-->
+      <!--      <div class="bottom-block-buttons">-->
+      <!--        <md-text-button label="用户协议" class="dark"></md-text-button>-->
+      <!--        <md-text-button label="隐私政策" class="dark"></md-text-button>-->
+      <!--      </div>-->
       <div class="bottom-block-divider"></div>
       <div class="bottom-block-bar">
         <span class="text-primary">Parabox</span>
@@ -202,6 +261,6 @@
         </md-standard-icon-button>
       </div>
     </div>
-<!--    <md-fab-extended label="即刻获取" icon="download" class="fab dark"></md-fab-extended>-->
+    <md-fab-extended label="即刻获取" icon="download" class="fab dark" (click)="scrollToDownload()"></md-fab-extended>
   </div>
 </mat-drawer-container>
