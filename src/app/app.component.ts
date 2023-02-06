@@ -12,8 +12,10 @@ import '@material/web/icon/icon.js';
 import '@material/web/list/list.js';
 import '@material/web/list/list-item.js';
 import '@material/web/ripple/ripple.js';
+import '@material/web/list/list-divider.js';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBook, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import {MatDrawerMode} from "@angular/material/sidenav";
 import {fromEvent} from "rxjs";
@@ -40,6 +42,15 @@ export class AppComponent {
         this.defaultNavOpened = true
       }
     });
+    this.breakpointObserver.observe([
+      "(max-width: 768px)"
+    ]).subscribe((result: BreakpointState) => {
+      if (result.matches) {
+        this.columnNum = 1
+      } else {
+        this.columnNum = 2
+      }
+    });
     document.addEventListener('scroll', () => {
       this.pageScrolled = window.pageYOffset != 0
     })
@@ -47,10 +58,14 @@ export class AppComponent {
 
   title = 'parabox-web-angular';
   faGithub = faGithub
+  faBook = faBook
+  faNewspaper = faNewspaper
 
   navMode: MatDrawerMode = "push"
   defaultNavOpened = true
   pageScrolled = false
+
+  columnNum = 2
 
 
   testClick(){

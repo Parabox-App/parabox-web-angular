@@ -4,6 +4,8 @@ $secondary: #BDCBAF;
 $onSecondary: #283420;
 $surface: #1A1C18;
 $onSurface: #E3E3DC;
+$surfaceVariant: #43483E;
+$onSurfaceVariant: #C4C8BB;
 $primaryContainer: #235105;
 $onPrimaryContainer: #BAF395;
 $secondaryContainer: #3E4A35;
@@ -44,7 +46,7 @@ $secondaryContainer: #3E4A35;
 .fab{
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  right: 100px;
 }
 
 .toolbar{
@@ -80,6 +82,7 @@ $secondaryContainer: #3E4A35;
 
 .text-primary{
   color: $onSurface;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
 .toolbar-title {
@@ -108,6 +111,7 @@ $secondaryContainer: #3E4A35;
   position: fixed;
   left: 0;
   top: 0;
+  height: 100vh;
 }
 
 .nav-container {
@@ -115,7 +119,7 @@ $secondaryContainer: #3E4A35;
   flex-direction: column;
   align-items: center;
   background-color: $surface;
-  padding-top: 74px;
+  height: 100%;
 }
 
 .nav-item {
@@ -188,7 +192,7 @@ $secondaryContainer: #3E4A35;
   background-color: $primary;
   color: $onPrimary;
   margin: 0 20px 0 0 ;
-  transition: border-radius .2s;
+  transition: all .2s;
 }
 
 .button-outlined {
@@ -202,7 +206,7 @@ $secondaryContainer: #3E4A35;
   font-size: 18px;
   color: $primary;
   border: 1px solid $primary;
-  transition: border-radius .2s;
+  transition: all .2s;
 }
 
 .button-filled:active{
@@ -260,15 +264,141 @@ $secondaryContainer: #3E4A35;
 .feature {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
-  height: 600px;
-  background-color: #283420;
+  height: 480px;
+  //border: 1px solid #283420;
+}
+
+.title{
+  margin: 0 0 0 120px;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+}
+
+.feature-main{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-text{
+  width: 47%;
+}
+
+.feature-subtitle {
+  width: 100%;
+  font-size: 20px;
+  color: $primary;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  margin: 0 0 20px 0;
+}
+
+.feature-title {
+  width: 100%;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+
+.feature-content{
+  width: 100%;
+  color: $onSurfaceVariant;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  font-size: 16px;
+}
+
+.feature-spacer {
+  width: 80px;
+}
+
+.feature-image {
+  width: 47%;
+  aspect-ratio: 4/3;
+  border-radius: 40px;
+  background-color: $primary;
+}
+
+.resources {
+  margin: 40px 120px;
+}
+
+.resource-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 20px;
+  background-color: $surfaceVariant;
+  transition: all .2s;
+}
+
+.resource-card:hover{
+  background-color: $secondaryContainer;
+}
+
+.resource-card:active{
+  border-radius: 56px;
+}
+
+.resource-card-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $surface;
+  transition: all .2s;
+}
+
+.resource-card-icon fa-icon{
+  color: $secondary;
+  transition: all .2s;
+}
+
+.resource-card:hover .resource-card-icon{
+  background-color: $primary;
+}
+
+.resource-card:hover .resource-card-icon fa-icon{
+  color: $secondaryContainer;
+}
+
+.resource-card-title{
+  font-size: 22px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin: 0 20px 15px 20px;
+}
+
+.resource-card-content{
+  font-size: 16px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin: 0 20px;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+  .fab{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
   .subject {
     flex-direction: column;
+    height: 1000px;
   }
   .subject-text-container {
     width: 100%;
@@ -280,17 +410,39 @@ $secondaryContainer: #3E4A35;
   .subject-image-container {
     width: 100%;
   }
+  .feature {
+    height: 800px;
+  }
+  .feature-main{
+    flex-direction: column;
+  }
+  .feature-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .feature-image {
+    width: 100%;
+  }
+  .feature-spacer {
+    width: 40px;
+  }
+  .title {
+    margin: 0 0 0 80px;
+  }
+  .resources {
+    margin: 40px 80px;
+  }
 }
 
 @media screen and (max-width: 575px) {
-  .subject {
-    flex-direction: column;
+  .feature-spacer {
+    width: 20px;
   }
-  .subject-text-container {
-    width: 100%;
-    padding: 0 20px;
+  .title {
+    margin: 0 0 0 40px;
+    font-size: 40px;
   }
-  .subject-image-container {
-    width: 100%;
+  .resources {
+    margin: 40px 40px;
   }
 }

@@ -6,7 +6,7 @@
     </md-standard-icon-button>
     <span class="toolbar-title text-primary">Parabox</span>
     <div class="version-tag">
-      <span class="version-tag-text">1.0.1</span>
+      <span class="version-tag-text">1.1.0</span>
     </div>
     <div class="spacer"></div>
     <a href="https://github.com/Parabox-App/Parabox" target="_blank">
@@ -19,8 +19,9 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" [mode]="navMode" [opened]="defaultNavOpened">
     <div class="nav-container">
+      <div style="height: 74px;"></div>
       <a href="#">
-        <div class="nav-item" >
+        <div class="nav-item">
           <span class="nav-item-text">主页</span>
         </div>
       </a>
@@ -54,14 +55,110 @@
         </div>
       </div>
       <div class="subject-image-container">
-          <img src="./assets/tablet.png" alt="tablet" id="tablet"/>
-          <img src="./assets/foldable.png" alt="foldable" id="foldable"/>
-          <img src="./assets/phone.png" alt="phone" id="phone"/>
+        <img src="./assets/tablet.png" alt="tablet" id="tablet"/>
+        <img src="./assets/foldable.png" alt="foldable" id="foldable"/>
+        <img src="./assets/phone.png" alt="phone" id="phone"/>
       </div>
     </div>
+    <!--    <div class="title text-primary">-->
+    <!--      <span>特性</span>-->
+    <!--    </div>-->
     <div class="feature">
+      <div class="feature-spacer"></div>
+      <md-standard-icon-button class="dark">
+        <md-icon class="icon">navigate_before</md-icon>
+      </md-standard-icon-button>
+      <div class="feature-spacer"></div>
+      <div class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            会话编组
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            冗余会话合并管理
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>
+              告别混乱的多平台会话和重复的通知，全新的编组功能允许用户将<span
+              style="color: #9FD67C">不同平台</span>的<span style="color:#9FD67C">不同会话</span>编组至新会话中，且不存在任何额外开销。编组后的会话享有与普通会话一致的功能体验。您可以抛弃数目繁多而功能相似的工作群组了——您只需要保留一个。
+            </p>
+          </div>
+        </div>
+        <div class="feature-image">
+          <img src="">
+        </div>
+      </div>
 
+      <div class="feature-spacer"></div>
+      <md-standard-icon-button class="dark">
+        <md-icon class="icon">navigate_next</md-icon>
+      </md-standard-icon-button>
+      <div class="feature-spacer"></div>
     </div>
+    <div class="title text-primary">
+      <span>资源</span>
+    </div>
+    <div class="resources">
+      <mat-grid-list [cols]="columnNum" gutterSize="10px" rowHeight="112px">
+        <mat-grid-tile>
+          <div class="resource-card">
+            <div class="resource-card-icon">
+              <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+            </div>
+            <div class="resource-card-title text-primary">
+              <span>开发者工具包</span>
+            </div>
+            <div class="resource-card-content text-primary">
+              <span>包含快速启动 Parabox 插件开发所需的预定义类和实用程序的开发工具包。</span>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="resource-card">
+            <div class="resource-card-icon">
+              <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+            </div>
+            <div class="resource-card-title text-primary">
+              <span>扩展：parabox-extension-ws</span>
+            </div>
+            <div class="resource-card-content text-primary">
+              <span>允许 Parabox 通过 websocket 协议与私有服务器交换数据。</span>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="resource-card">
+            <div class="resource-card-icon">
+              <fa-icon class="icon" [icon]="faNewspaper"></fa-icon>
+            </div>
+            <div class="resource-card-title text-primary">
+              <span>博客：EFB-Parabox-Master 使用教程</span>
+            </div>
+            <div class="resource-card-content text-primary">
+              <span>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</span>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="resource-card">
+            <div class="resource-card-icon">
+              <fa-icon class="icon" [icon]="faBook"></fa-icon>
+            </div>
+            <div class="resource-card-title text-primary">
+              <span>CodeLab：从模板项目开始</span>
+            </div>
+            <div class="resource-card-content text-primary">
+              <span>模板项目包含了开发工具包，并完成了基本的架构设置。你可以从中快速开始开发你的扩展。</span>
+            </div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <div class="download"></div>
     <md-fab-extended label="获取" icon="download" class="fab dark"></md-fab-extended>
   </div>
 </mat-drawer-container>

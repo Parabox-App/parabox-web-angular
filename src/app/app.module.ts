@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRippleModule } from "@angular/material/core";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HoverClassDirective } from './hover-class.directive';
+import {MatGridListModule} from "@angular/material/grid-list";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HoverClassDirective } from './hover-class.directive';
     MatSidenavModule,
     BrowserAnimationsModule,
     MatRippleModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent],
