@@ -11,6 +11,24 @@ $onPrimaryContainer: #BAF395;
 $secondaryContainer: #3E4A35;
 $onSecondaryContainer: #D9E7CA;
 
+@keyframes my-rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(359deg)
+  }
+}
+
+@keyframes my-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
 .dark {
   --md-sys-color-primary: #9FD67C;
   --md-sys-color-primary-container: #235105;
@@ -44,13 +62,13 @@ $onSecondaryContainer: #D9E7CA;
   --md-sys-color-scrim: #000000;
 }
 
-.fab{
+.fab {
   position: fixed;
   bottom: 50px;
   right: 100px;
 }
 
-.toolbar{
+.toolbar {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -68,7 +86,7 @@ $onSecondaryContainer: #D9E7CA;
 }
 
 
-.container{
+.container {
   margin-top: 64px;
   width: 100%;
 }
@@ -77,11 +95,11 @@ $onSecondaryContainer: #D9E7CA;
   flex: 1 1 auto;
 }
 
-.icon{
+.icon {
   color: $onSurface;
 }
 
-.text-primary{
+.text-primary {
   color: $onSurface;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
@@ -144,7 +162,7 @@ $onSecondaryContainer: #D9E7CA;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
-.content{
+.content {
   max-width: 1366px;
 }
 
@@ -161,7 +179,7 @@ $onSecondaryContainer: #D9E7CA;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   padding: 0 80px;
 }
 
@@ -180,7 +198,7 @@ $onSecondaryContainer: #D9E7CA;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
-.subject-text-container .buttons{
+.subject-text-container .buttons {
   display: flex;
   flex-direction: row;
 }
@@ -196,9 +214,9 @@ $onSecondaryContainer: #D9E7CA;
   font-size: 18px;
   background-color: $primary;
   color: $onPrimary;
-  margin: 0 20px 0 0 ;
+  margin: 0 20px 0 0;
   transition: all .2s;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 .button-outlined {
@@ -213,22 +231,22 @@ $onSecondaryContainer: #D9E7CA;
   color: $primary;
   border: 1px solid $primary;
   transition: all .2s;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
-.button-filled:active{
+.button-filled:active {
   border-radius: 10px;
 }
 
-.button-outlined:hover{
+.button-outlined:hover {
   background-color: $secondaryContainer;
 }
 
-.button-outlined:active{
+.button-outlined:active {
   border-radius: 10px;
 }
 
-.subject-text-container .buttons .button{
+.subject-text-container .buttons .button {
   margin: 0 20px 0 0;
 }
 
@@ -241,7 +259,28 @@ $onSecondaryContainer: #D9E7CA;
   position: relative;
 }
 
-.subject-image-container #phone{
+.canvas-container{
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.canvas-scale{
+  width: 100%;
+  height: 100%;
+  animation: my-scale 5s ease-in-out alternate infinite;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  animation: my-rotate 30s linear infinite;
+}
+
+.subject-image-container #phone {
   position: absolute;
   top: 57%;
   left: 20%;
@@ -250,7 +289,7 @@ $onSecondaryContainer: #D9E7CA;
   height: auto;
 }
 
-.subject-image-container #foldable{
+.subject-image-container #foldable {
   position: absolute;
   top: 53%;
   left: 75%;
@@ -259,7 +298,7 @@ $onSecondaryContainer: #D9E7CA;
   height: auto;
 }
 
-.subject-image-container #tablet{
+.subject-image-container #tablet {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -276,24 +315,24 @@ $onSecondaryContainer: #D9E7CA;
   height: 480px;
 }
 
-.title{
+.title {
   margin: 0 0 0 120px;
   font-size: 48px;
   font-weight: normal;
   font-family: "Google Sans Display", "Microsoft YaHei", serif;
 }
 
-.feature-button{
+.feature-button {
   margin: 0 60px;
 }
 
-.feature-box{
+.feature-box {
   flex: 1 1 auto;
   height: 100%;
   position: relative;
 }
 
-.feature-main{
+.feature-main {
   width: 100%;
   height: 100%;
   top: 0;
@@ -305,7 +344,7 @@ $onSecondaryContainer: #D9E7CA;
   align-items: center;
 }
 
-.feature-text{
+.feature-text {
   width: 47%;
 }
 
@@ -323,7 +362,7 @@ $onSecondaryContainer: #D9E7CA;
   margin: 0 0 20px 0;
 }
 
-.feature-content{
+.feature-content {
   width: 100%;
   color: $onSurfaceVariant;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
@@ -357,11 +396,11 @@ $onSecondaryContainer: #D9E7CA;
   transition: all .2s;
 }
 
-.resource-card:hover{
+.resource-card:hover {
   background-color: $secondaryContainer;
 }
 
-.resource-card:active{
+.resource-card:active {
   border-radius: 56px;
 }
 
@@ -379,40 +418,40 @@ $onSecondaryContainer: #D9E7CA;
   transition: all .2s;
 }
 
-.resource-card-icon fa-icon{
+.resource-card-icon fa-icon {
   color: $secondary;
   transition: all .2s;
 }
 
-.resource-card:hover .resource-card-icon{
+.resource-card:hover .resource-card-icon {
   background-color: $primary;
 }
 
-.resource-card:hover .resource-card-icon fa-icon{
+.resource-card:hover .resource-card-icon fa-icon {
   color: $secondaryContainer;
 }
 
-.resource-card-title{
+.resource-card-title {
   font-size: 22px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding: 0 20px 15px 20px;
 }
 
-.resource-card:hover .resource-card-title{
+.resource-card:hover .resource-card-title {
   color: $onSecondaryContainer;
 }
 
-.resource-card-content{
+.resource-card-content {
   font-size: 16px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding: 0 20px;
 }
 
-.extension{
+.extension {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -424,7 +463,7 @@ $onSecondaryContainer: #D9E7CA;
   height: 64px;
 }
 
-.extension-text{
+.extension-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -432,23 +471,23 @@ $onSecondaryContainer: #D9E7CA;
   margin: 0 0 0 64px;
 }
 
-.extension-text-title{
+.extension-text-title {
   font-size: 42px;
   font-weight: normal;
   font-family: "Google Sans Display", "Microsoft YaHei", serif;
 }
 
-.extension-text-content{
+.extension-text-content {
   font-size: 16px;
   color: $onSurfaceVariant;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
-.extension-github{
+.extension-github {
   font-size: 16px;
 }
 
-.extension-github span{
+.extension-github span {
   color: $primary;
 }
 
@@ -472,11 +511,11 @@ $onSecondaryContainer: #D9E7CA;
   align-items: center;
 }
 
-.download-image img{
+.download-image img {
   height: 60%;
 }
 
-.download-detail{
+.download-detail {
   width: 50%;
   height: 100%;
   display: flex;
@@ -497,29 +536,32 @@ $onSecondaryContainer: #D9E7CA;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
-.download-detail .button-filled{
+.download-detail .button-filled {
   margin: 36px 0 0 0;
 }
 
-.download-detail .button-outlined{
+.download-detail .button-outlined {
   margin: 16px 0 0 0;
 }
 
-.download .button-filled fa-icon{
+.download .button-filled fa-icon {
   margin: 0 0 0 32px;
 }
-.download .button-filled span{
+
+.download .button-filled span {
   margin: 0 10px;
 }
-.download .button-filled md-icon{
+
+.download .button-filled md-icon {
   color: $onPrimary;
   margin: 0 32px 0 0;
 }
 
-.download .button-outlined fa-icon{
+.download .button-outlined fa-icon {
   margin: 0 0 0 32px;
 }
-.download .button-outlined span{
+
+.download .button-outlined span {
   margin: 0 32px 0 10px;
 }
 
@@ -537,7 +579,7 @@ $onSecondaryContainer: #D9E7CA;
   margin: 24px;
 }
 
-.bottom-block-content{
+.bottom-block-content {
   width: 60%;
   margin: 0 32px 24px 32px;
   font-size: 15px;
@@ -545,7 +587,7 @@ $onSecondaryContainer: #D9E7CA;
   color: $onSurfaceVariant;
 }
 
-.bottom-block-buttons{
+.bottom-block-buttons {
   display: flex;
   margin: 0 0 0 32px;
   flex-direction: row;
@@ -555,20 +597,20 @@ $onSecondaryContainer: #D9E7CA;
   margin-right: 10px;
 }
 
-.bottom-block-divider{
+.bottom-block-divider {
   width: 100%;
   height: 1px;
   background-color: $surface;
 }
 
-.bottom-block-bar{
+.bottom-block-bar {
   height: 88px;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.bottom-block-bar span{
+.bottom-block-bar span {
   font-size: 22px;
   font-family: "Google Sans Display", serif;
   margin: 0 32px;
@@ -576,7 +618,7 @@ $onSecondaryContainer: #D9E7CA;
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .fab{
+  .fab {
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -598,10 +640,10 @@ $onSecondaryContainer: #D9E7CA;
   .feature {
     height: 800px;
   }
-  .feature-button{
+  .feature-button {
     margin: 0 40px;
   }
-  .feature-main{
+  .feature-main {
     flex-direction: column;
     justify-content: center;
   }
@@ -618,29 +660,29 @@ $onSecondaryContainer: #D9E7CA;
   .resources {
     margin: 40px 80px;
   }
-  .extension{
+  .extension {
     margin: 40px 80px;
   }
-  .extension-text-title{
+  .extension-text-title {
     font-size: 36px;
   }
   .download {
     margin: 0 80px;
   }
-  .download-image{
+  .download-image {
     display: none;
   }
-  .download-detail{
+  .download-detail {
     width: 100%;
     align-items: center;
   }
-  .download-title{
+  .download-title {
     font-size: 36px;
   }
   .bottom-block {
     margin: 40px 80px;
   }
-  .bottom-block-content{
+  .bottom-block-content {
     width: auto;
   }
 }
@@ -650,25 +692,25 @@ $onSecondaryContainer: #D9E7CA;
     margin: 0 0 0 40px;
     font-size: 40px;
   }
-  .feature-button{
+  .feature-button {
     margin: 0 20px;
   }
   .resources {
     margin: 40px 40px;
   }
-  .extension{
+  .extension {
     margin: 40px 40px;
   }
-  .extension-text{
+  .extension-text {
     margin: 0 0 0 32px;
   }
-  .extension-text-title{
+  .extension-text-title {
     font-size: 24px;
   }
   .download {
     margin: 0 40px;
   }
-  .download-title{
+  .download-title {
     font-size: 30px;
   }
   .bottom-block {

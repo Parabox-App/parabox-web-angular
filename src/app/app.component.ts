@@ -27,11 +27,23 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('myTrigger', [
+    trigger('fadeInOut', [
       state('false', style({ opacity: 0 })),
       state('true', style({ opacity: 1 })),
       transition('false => true', [animate('.2s .2s ease-in')]),
       transition('true => false', [animate('.2s ease-in')])
+    ]),
+    trigger('subjectSlideInOut', [
+      state('false', style({ transform: 'translate(-50%, 0%)', opacity: 0 })),
+      state('true', style({ transform: 'translate(-50%, -50%)', opacity: 1 })),
+      transition('false => true', [animate('.5s ease')]),
+      transition('true => false', [animate('.5s ease')])
+    ]),
+    trigger('slideInOut', [
+      state('false', style({ transform: 'translateY(50%)', opacity: 0 })),
+      state('true', style({ transform: 'translateY(0%)', opacity: 1 })),
+      transition('false => true', [animate('.5s ease')]),
+      transition('true => false', [animate('.5s ease')])
     ])
   ],
 })
@@ -65,6 +77,13 @@ export class AppComponent {
       this.pageScrolled = window.pageYOffset != 0
     })
   }
+  ngOnInit() {
+    setTimeout(() => {
+      this.drawCanvas()
+    }, 100)
+    this.launchTransition()
+    this.beginFeatureInterval()
+  }
 
   title = 'parabox-web-angular';
   faGithub = faGithub
@@ -79,19 +98,70 @@ export class AppComponent {
   pageScrolled = false
   columnNum = 2
   featureNum = 0
+  launchTransitionStep = 0
+  featureInterval: any
   @ViewChild("download") downloadBlock: ElementRef | undefined;
+  @ViewChild("canvas") canvas: ElementRef | undefined;
+  drawCanvas(){
+    if (this.canvas && this.canvas.nativeElement.getContext('2d')) {
+      console.log("drawing canvas")
+      const canvas = this.canvas.nativeElement
+      let radius = 60
+      let centerX = 400
+      let centerY = 400
+      let ctx = canvas.getContext('2d')
+      if (ctx) {
+        ctx.strokeStyle = "rgb(159, 214, 124)"
+        ctx.lineWidth = 2
+        ctx.lineCap = "square"
+        ctx.beginPath()
+        for (let i = 0; i <= 360; i++) {
+          let theta = i * Math.PI / 180
+          let r = Math.pow((Math.sin(20 * theta) + 20), 0.5)
+          let x = centerX + r * radius * Math.cos(theta)
+          let y = centerY + r * radius * Math.sin(theta)
+          if (i == 0){
+            ctx.moveTo(x, y)
+          }else{
+            ctx.quadraticCurveTo(x, y, x, y)
+          }
+        }
+        ctx.stroke()
+      }
+    } else {
+      console.log("canvas not ready")
+    }
+  }
   scrollToTop(){
     window.scrollTo({top: 0, behavior: "smooth"})
   }
   scrollToDownload(){
     // @ts-ignore
-    this.downloadBlock.nativeElement.scrollIntoView({behavior: "smooth"})
+    this.downloadBlock.nativeElement.scrollIntoView({ behavior: "smooth"})
   }
   featurePlus(){
+    this.featureInterval && clearInterval(this.featureInterval)
     this.featureNum = (this.featureNum + 1) % 8
+    this.beginFeatureInterval()
   }
   featureDecrease(){
+    this.featureInterval && clearInterval(this.featureInterval)
     this.featureNum = (this.featureNum + 7) % 8
+    this.beginFeatureInterval()
+  }
+  launchTransition(){
+    setTimeout(() => {
+      this.launchTransitionStep = 1
+      setTimeout(() => {
+        this.launchTransitionStep = 2
+      }, 200)
+    }, 200)
+  }
+
+  beginFeatureInterval(){
+    this.featureInterval = setInterval(() => {
+      this.featurePlus()
+    }, 5000)
   }
 
 

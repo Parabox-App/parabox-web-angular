@@ -43,7 +43,7 @@
       <div class="subject-text-container">
         <h1>原生 Android 上的即时通讯体验</h1>
         <h2>界面友好，功能完善，可拓展的即时通讯客户端。</h2>
-        <div class="buttons">
+        <div [@slideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" class="buttons">
           <div class="button-filled" (click)="scrollToDownload()">
             <span style="margin: 0 40px">快速开始</span>
           </div>
@@ -53,9 +53,15 @@
         </div>
       </div>
       <div class="subject-image-container">
-        <img src="./assets/tablet.png" alt="tablet" id="tablet"/>
-        <img src="./assets/foldable.png" alt="foldable" id="foldable"/>
-        <img src="./assets/phone.png" alt="phone" id="phone"/>
+        <div class="canvas-container">
+          <div class="canvas-scale">
+            <canvas #canvas id="canvas" width="800" height="800"></canvas>
+
+          </div>
+        </div>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 1 ? 'true' : 'false'" src="./assets/tablet.png" alt="tablet" id="tablet"/>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/foldable.png" alt="foldable" id="foldable"/>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/phone.png" alt="phone" id="phone"/>
       </div>
     </div>
     <!--    <div class="title text-primary">-->
@@ -66,7 +72,7 @@
         <md-icon class="icon">navigate_before</md-icon>
       </md-standard-icon-button>
       <div class="feature-box">
-        <div [@myTrigger]="featureNum == 0 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 0 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -90,7 +96,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 1 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 1 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -111,7 +117,7 @@
             <!--          <img src="">-->
           </div>
         </div>
-        <div [@myTrigger]="featureNum == 2 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 2 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -132,7 +138,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 3 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 3 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -153,7 +159,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 4 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 4 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -174,7 +180,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 5 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 5 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -195,7 +201,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 6 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 6 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
@@ -216,7 +222,7 @@
           </div>
         </div>
 
-        <div [@myTrigger]="featureNum == 7 ? 'true' : 'false'" class="feature-main">
+        <div [@fadeInOut]="featureNum == 7 ? 'true' : 'false'" class="feature-main">
           <div class="feature-text">
             <div class="feature-subtitle">
           <span>
