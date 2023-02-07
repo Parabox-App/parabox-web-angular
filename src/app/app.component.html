@@ -62,11 +62,9 @@
     <!--      <span>特性</span>-->
     <!--    </div>-->
     <div class="feature">
-      <div class="feature-spacer"></div>
-      <md-standard-icon-button class="dark" (click)="featureDecrease()">
+      <md-standard-icon-button class="dark feature-button" (click)="featureDecrease()">
         <md-icon class="icon">navigate_before</md-icon>
       </md-standard-icon-button>
-      <div class="feature-spacer"></div>
 
       <div *ngIf="featureNum == 0" class="feature-main">
         <div class="feature-text">
@@ -87,7 +85,7 @@
             </p>
           </div>
         </div>
-        <div class="feature-image">
+        <div class="feature-image" style="background-image: url('/assets/web-1.png')">
           <img src="">
         </div>
       </div>
@@ -109,16 +107,140 @@
               支持对聊天内容，发送人昵称，会话名称等进行字符串匹配搜索，搜索结果一目了然。</p>
           </div>
         </div>
-        <div class="feature-image">
-          <img src="">
+        <div class="feature-image" style="background-image: url('/assets/web-2.png')">
+<!--          <img src="">-->
         </div>
       </div>
 
-      <div class="feature-spacer"></div>
-      <md-standard-icon-button class="dark" (click)="featurePlus()">
+      <div *ngIf="featureNum == 2" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            文件管理
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            独立文件管理页面
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>是否曾遇到难以下载历史文件的窘境？散乱在各处的文件类型繁多，难以追溯与定位。Parabox 采用独立的文件管理页面。提供时间，类型，文件大小等多种筛选条件。配合关键字检索，助你快速定位文件，展开工作流。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-3.png')">
+<!--          <img src="">-->
+        </div>
+      </div>
+
+      <div *ngIf="featureNum == 3" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            文件管理
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            会话文件云端备份
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>便利地接入您喜欢的云端存储服务。在后台闲暇及网络条件允许时自动备份文件至云端，不占用本地存储空间。从此会话文件不易错过，不再丢失。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-4.png')">
+<!--          <img src="">-->
+        </div>
+      </div>
+
+      <div *ngIf="featureNum == 4" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            通知
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            人与对话
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>“人与对话”计划包含自 Android 11 后引入的一系列系统特性。如<span style="color:#9FD67C">对话通知，对话泡，对话微件，展开通知，快捷回复，快捷方式</span>等。Parabox 完美适配以上通知特性，带来纯粹的即时通讯体验。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-5.png')">
+<!--          <img src="">-->
+        </div>
+      </div>
+
+      <div *ngIf="featureNum == 5" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            推送
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            FCM 云消息传递
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>提供<span style="color:#9FD67C">设备转发</span>与<span style="color:#9FD67C">服务器转发</span>两种 FCM 接入方案，实现零后台驻留。系统级推送服务接受系统统一调度，拥有更出色的调度机制和更佳的性能。极大节省系统资源，延长设备续航。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-6.png')">
+<!--          <img src="">-->
+        </div>
+      </div>
+
+      <div *ngIf="featureNum == 6" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            实验性
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            机器学习加持
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>由 <span style="color:#9FD67C">ML Kit</span> 提供的可离线运行的聊天内容实体提取，基于上下文的智能回复，以及多语言翻译。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-7.png')">
+<!--          <img src="">-->
+        </div>
+      </div>
+
+      <div *ngIf="featureNum == 7" class="feature-main">
+        <div class="feature-text">
+          <div class="feature-subtitle">
+          <span>
+            模块化
+          </span>
+          </div>
+          <div class="feature-title">
+          <span class="text-primary">
+            定制扩展库
+          </span>
+          </div>
+          <div class="feature-content">
+            <p>第三方扩展提供更丰富，更稳定的消息源。用户可根据使用习惯自行组建扩展库，不同来源的消息仍可以得到统一而高效的处理。</p>
+          </div>
+        </div>
+        <div class="feature-image" style="background-image: url('/assets/web-8.png')">
+<!--          <img src="./assets/web-1.png">-->
+        </div>
+      </div>
+
+      <md-standard-icon-button class="dark feature-button" (click)="featurePlus()">
         <md-icon class="icon">navigate_next</md-icon>
       </md-standard-icon-button>
-      <div class="feature-spacer"></div>
     </div>
     <div class="title text-primary">
       <span>资源</span>

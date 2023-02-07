@@ -88,10 +88,10 @@ export class AppComponent {
     this.downloadBlock.nativeElement.scrollIntoView({behavior: "smooth"})
   }
   featurePlus(){
-    this.featureNum = (this.featureNum + 1) % 3
+    this.featureNum = (this.featureNum + 1) % 8
   }
   featureDecrease(){
-    this.featureNum = (this.featureNum - 1) % 3
+    this.featureNum = (this.featureNum + 7) % 8
   }
 
 
