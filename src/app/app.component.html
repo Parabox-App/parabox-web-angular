@@ -26,9 +26,11 @@
       <div class="nav-item" (click)="scrollToDownload()">
         <span class="nav-item-text">快速开始</span>
       </div>
-      <div class="nav-item">
-        <span class="nav-item-text">文档</span>
-      </div>
+      <a href="https://docs.parabox.ojhdt.dev/" target="_blank">
+        <div class="nav-item">
+          <span class="nav-item-text">文档</span>
+        </div>
+      </a>
       <div class="nav-item">
         <span class="nav-item-text">用户协议</span>
       </div>
@@ -59,9 +61,12 @@
 
           </div>
         </div>
-        <img [@subjectSlideInOut]="launchTransitionStep >= 1 ? 'true' : 'false'" src="./assets/tablet.png" alt="tablet" id="tablet"/>
-        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/foldable.png" alt="foldable" id="foldable"/>
-        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/phone.png" alt="phone" id="phone"/>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 1 ? 'true' : 'false'" src="./assets/tablet.png" alt="tablet"
+             id="tablet"/>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/foldable.png"
+             alt="foldable" id="foldable"/>
+        <img [@subjectSlideInOut]="launchTransitionStep >= 2 ? 'true' : 'false'" src="./assets/phone.png" alt="phone"
+             id="phone"/>
       </div>
     </div>
     <!--    <div class="title text-primary">-->
@@ -92,7 +97,7 @@
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-1.png')">
-<!--            <img src="">-->
+            <!--            <img src="">-->
           </div>
         </div>
 
@@ -130,7 +135,8 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>是否曾遇到难以下载历史文件的窘境？散乱在各处的文件类型繁多，难以追溯与定位。Parabox 采用独立的文件管理页面。提供时间，类型，文件大小等多种筛选条件。配合关键字检索，助你快速定位文件，展开工作流。</p>
+              <p>是否曾遇到难以下载历史文件的窘境？散乱在各处的文件类型繁多，难以追溯与定位。Parabox
+                采用独立的文件管理页面。提供时间，类型，文件大小等多种筛选条件。配合关键字检索，助你快速定位文件，展开工作流。</p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-3.png')">
@@ -151,7 +157,8 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>便利地接入您喜欢的云端存储服务。在后台闲暇及网络条件允许时自动备份文件至云端，不占用本地存储空间。从此会话文件不易错过，不再丢失。</p>
+              <p>
+                便利地接入您喜欢的云端存储服务。在后台闲暇及网络条件允许时自动备份文件至云端，不占用本地存储空间。从此会话文件不易错过，不再丢失。</p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-4.png')">
@@ -172,7 +179,8 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>“人与对话”计划包含自 Android 11 后引入的一系列系统特性。如<span style="color:#9FD67C">对话通知，对话泡，对话微件，展开通知，快捷回复，快捷方式</span>等。Parabox 完美适配以上通知特性，带来纯粹的即时通讯体验。</p>
+              <p>“人与对话”计划包含自 Android 11 后引入的一系列系统特性。如<span style="color:#9FD67C">对话通知，对话泡，对话微件，展开通知，快捷回复，快捷方式</span>等。Parabox
+                完美适配以上通知特性，带来纯粹的即时通讯体验。</p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-5.png')">
@@ -193,7 +201,9 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>提供<span style="color:#9FD67C">设备转发</span>与<span style="color:#9FD67C">服务器转发</span>两种 FCM 接入方案，实现零后台驻留。系统级推送服务接受系统统一调度，拥有更出色的调度机制和更佳的性能。极大节省系统资源，延长设备续航。</p>
+              <p>提供<span style="color:#9FD67C">设备转发</span>与<span style="color:#9FD67C">服务器转发</span>两种 FCM
+                接入方案，实现零后台驻留。系统级推送服务接受系统统一调度，拥有更出色的调度机制和更佳的性能。极大节省系统资源，延长设备续航。
+              </p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-6.png')">
@@ -214,7 +224,8 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>由 <span style="color:#9FD67C">ML Kit</span> 提供的可离线运行的聊天内容实体提取，基于上下文的智能回复，以及多语言翻译。</p>
+              <p>由 <span style="color:#9FD67C">ML Kit</span> 提供的可离线运行的聊天内容实体提取，基于上下文的智能回复，以及多语言翻译。
+              </p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-7.png')">
@@ -235,7 +246,8 @@
           </span>
             </div>
             <div class="feature-content">
-              <p>第三方扩展提供更丰富，更稳定的消息源。用户可根据使用习惯自行组建扩展库，不同来源的消息仍可以得到统一而高效的处理。</p>
+              <p>
+                第三方扩展提供更丰富，更稳定的消息源。用户可根据使用习惯自行组建扩展库，不同来源的消息仍可以得到统一而高效的处理。</p>
             </div>
           </div>
           <div class="feature-image" style="background-image: url('/assets/web-8.png')">
@@ -253,56 +265,68 @@
     <div class="resources">
       <mat-grid-list [cols]="columnNum" gutterSize="10px" rowHeight="112px">
         <mat-grid-tile>
-          <div class="resource-card">
-            <div class="resource-card-icon">
-              <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+          <a href="https://github.com/Parabox-App/parabox-development-kit" target="_blank"
+             style="width: 100%;height: 100%;">
+            <div class="resource-card">
+              <div class="resource-card-icon">
+                <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+              </div>
+              <div class="resource-card-title text-primary">
+                <span>开发者工具包</span>
+              </div>
+              <div class="resource-card-content text-primary">
+                <span>包含快速启动 Parabox 扩展开发所需的预定义类和实用程序的开发工具包。</span>
+              </div>
             </div>
-            <div class="resource-card-title text-primary">
-              <span>开发者工具包</span>
-            </div>
-            <div class="resource-card-content text-primary">
-              <span>包含快速启动 Parabox 扩展开发所需的预定义类和实用程序的开发工具包。</span>
-            </div>
-          </div>
+          </a>
         </mat-grid-tile>
         <mat-grid-tile>
-          <div class="resource-card">
-            <div class="resource-card-icon">
-              <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+          <a href="https://github.com/ojhdt/efb-parabox-master" target="_blank"
+             style="width: 100%;height: 100%;">
+            <div class="resource-card">
+              <div class="resource-card-icon">
+                <fa-icon class="icon" [icon]="faGithub"></fa-icon>
+              </div>
+              <div class="resource-card-title text-primary">
+                <span>EFB Parabox Master</span>
+              </div>
+              <div class="resource-card-content text-primary">
+                <span>用于 EH Forwarder Bot 的 Parabox 主端。需结合 Parabox WS 扩展 parabox-extension-ws 使用。</span>
+              </div>
             </div>
-            <div class="resource-card-title text-primary">
-              <span>扩展：parabox-extension-ws</span>
-            </div>
-            <div class="resource-card-content text-primary">
-              <span>允许 Parabox 通过 websocket 协议与私有服务器交换数据。</span>
-            </div>
-          </div>
+          </a>
         </mat-grid-tile>
         <mat-grid-tile>
-          <div class="resource-card">
-            <div class="resource-card-icon">
-              <fa-icon class="icon" [icon]="faNewspaper"></fa-icon>
+          <a href="https://blog.ojhdt.com/20221221/efb-parabox-master/" target="_blank"
+             style="width: 100%;height: 100%;">
+            <div class="resource-card">
+              <div class="resource-card-icon">
+                <fa-icon class="icon" [icon]="faNewspaper"></fa-icon>
+              </div>
+              <div class="resource-card-title text-primary">
+                <span>博客：EFB-Parabox-Master 使用教程</span>
+              </div>
+              <div class="resource-card-content text-primary">
+                <span>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</span>
+              </div>
             </div>
-            <div class="resource-card-title text-primary">
-              <span>博客：EFB-Parabox-Master 使用教程</span>
-            </div>
-            <div class="resource-card-content text-primary">
-              <span>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</span>
-            </div>
-          </div>
+          </a>
         </mat-grid-tile>
         <mat-grid-tile>
-          <div class="resource-card">
-            <div class="resource-card-icon">
-              <fa-icon class="icon" [icon]="faBook"></fa-icon>
+          <a href="https://github.com/Parabox-App/parabox-development-kit" target="_blank"
+             style="width: 100%;height: 100%;">
+            <div class="resource-card">
+              <div class="resource-card-icon">
+                <fa-icon class="icon" [icon]="faBook"></fa-icon>
+              </div>
+              <div class="resource-card-title text-primary">
+                <span>从模板项目开始</span>
+              </div>
+              <div class="resource-card-content text-primary">
+                <span>模板项目已包含开发工具包和基本的架构设置。可从中快速开始扩展开发。</span>
+              </div>
             </div>
-            <div class="resource-card-title text-primary">
-              <span>从模板项目开始</span>
-            </div>
-            <div class="resource-card-content text-primary">
-              <span>模板项目已包含开发工具包和基本的架构设置。可从中快速开始扩展开发。</span>
-            </div>
-          </div>
+          </a>
         </mat-grid-tile>
       </mat-grid-list>
     </div>
