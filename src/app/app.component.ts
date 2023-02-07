@@ -28,10 +28,10 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   styleUrls: ['./app.component.scss'],
   animations: [
     trigger('myTrigger', [
-      state('void', style({ opacity: 0 })),
-      state('*', style({ opacity: 1 })),
-      transition('void => *', [animate('0.5s 0.5s ease-in')]),
-      transition('* => void', [animate('0.5s ease-in')])
+      state('false', style({ opacity: 0 })),
+      state('true', style({ opacity: 1 })),
+      transition('false => true', [animate('.2s .2s ease-in')]),
+      transition('true => false', [animate('.2s ease-in')])
     ])
   ],
 })
