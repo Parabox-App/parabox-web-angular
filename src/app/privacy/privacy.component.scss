@@ -1,0 +1,68 @@
+$primary: #9FD67C;
+$onPrimary: #113800;
+$secondary: #BDCBAF;
+$onSecondary: #283420;
+$surface: #1A1C18;
+$onSurface: #E3E3DC;
+$surfaceVariant: #43483E;
+$onSurfaceVariant: #C4C8BB;
+$primaryContainer: #235105;
+$onPrimaryContainer: #BAF395;
+$secondaryContainer: #3E4A35;
+$onSecondaryContainer: #D9E7CA;
+
+.heading {
+  height: 240px;
+  margin: 40px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heading h1 {
+  color: $onSurface;
+  font-size: 56px;
+  font-family: "Google Sans Display", "Microsoft YaHei", serif;
+}
+
+.heading h2 {
+  margin: 0 0 40px 0;
+  color: $onSurface;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+}
+
+.content {
+  margin: 40px 120px;
+  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  line-height: 2;
+  color: $onSurface;
+}
+
+.content a {
+  color: $primary;
+  text-decoration: none;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+.content h3 {
+
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .heading {
+    margin: 40px 80px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .heading {
+    margin: 40px 40px;
+  }
+}
