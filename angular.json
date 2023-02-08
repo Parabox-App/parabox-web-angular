@@ -40,8 +40,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kb",
-                  "maximumError": "8kb"
+                  "maximumWarning": "8kb",
+                  "maximumError": "16kb"
                 }
               ],
               "outputHashing": "all"
@@ -99,13 +99,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       },
       "i18n": {
         "sourceLocale": "zh-Hans",
         "locales": {
           "en": {
-            "translation": "src/locale/messages.en.xlf"
+            "translation": "src/locale/messages.en.xlf",
           }
         }
       }

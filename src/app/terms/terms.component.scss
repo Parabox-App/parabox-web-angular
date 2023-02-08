@@ -31,12 +31,12 @@ $onSecondaryContainer: #D9E7CA;
   color: $onSurface;
   font-size: 24px;
   font-weight: normal;
-  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  font-family: "Google Sans Text", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", serif;
 }
 
 .content {
   margin: 40px 120px;
-  font-family: "Google Sans Text", "Microsoft YaHei", serif;
+  font-family: "Google Sans Text", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", serif;
   line-height: 2;
   color: $onSurface;
 }
@@ -54,10 +54,16 @@ $onSecondaryContainer: #D9E7CA;
   .heading {
     margin: 40px 80px;
   }
+  .content {
+    margin: 40px 80px;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .heading {
+    margin: 40px 40px;
+  }
+  .content {
     margin: 40px 40px;
   }
 }
