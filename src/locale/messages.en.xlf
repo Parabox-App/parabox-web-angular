@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="zh-CN" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8806832318605201510" datatype="html">
+        <source>主页</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5663341488582522474" datatype="html">
+        <source>文档</source>
+        <target>Docs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2802466502535724870" datatype="html">
+        <source>用户协议</source>
+        <target>Terms</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/terms/terms.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2775781708261086928" datatype="html">
+        <source>隐私政策</source>
+        <target>Privacy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy/privacy.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1483846660302663758" datatype="html">
+        <source> Parabox 是一款界面友好，功能完善，可拓展的即时通讯客户端。界面遵循 Material You 设计语言。 </source>
+        <target> Parabox is a friendly interface, complete functions, and expandable instant messaging client. The interface follows the Material You design language. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4409242051656102012" datatype="html">
+        <source>更新日期：<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color: #9FD67C&quot;&gt;"/>2022年10月9日<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Update Date: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color: #9FD67C&quot;&gt;"/>October 9, 2022<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/privacy/privacy.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3252860389609002381" datatype="html">
+        <source>原生 Android 上的即时通讯体验</source>
+        <target>Instant messaging experience on native Android</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5034153743086747727" datatype="html">
+        <source>界面友好，功能完善，可拓展的即时通讯客户端。</source>
+        <target>Friendly interface, complete functions, and expandable instant messaging client.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7294049377722786661" datatype="html">
+        <source>快速开始</source>
+        <target>Quick Start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8082500354953704960" datatype="html">
+        <source>阅读文档</source>
+        <target>Read the Docs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5310769696727107236" datatype="html">
+        <source> 会话编组 </source>
+        <target> Chat Marshalling </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8419852998926671725" datatype="html">
+        <source> 冗余会话合并管理 </source>
+        <target> Merge management redundant chats </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="878256341849134802" datatype="html">
+        <source> 告别混乱的多平台会话和重复的通知，全新的编组功能允许用户将<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span
+            style=&quot;color: #9FD67C&quot;&gt;"/>不同平台<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>的<x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>不同会话<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>编组至新会话中，且不存在任何额外开销。编组后的会话享有与普通会话一致的功能体验。您可以抛弃数目繁多而功能相似的工作群组了——您只需要保留一个。 </source>
+        <target> Say goodbye to confusing multi-platform chats and duplicate notifications, the new grouping feature allows users to group <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>different chats<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> from <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span
+            style=&quot;color: #9FD67C&quot;&gt;"/>different platforms<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> into a new chat without any additional overhead. Grouped chats enjoy the same functional experience as ordinary chats. You can ditch the multitude of workgroups that function similarly—you only need to keep one. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">50,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4750204433887226894" datatype="html">
+        <source> 全局搜索 </source>
+        <target> Global Search </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="738571435647718151" datatype="html">
+        <source> 快速定位聊天记录 </source>
+        <target> Quickly locate chat records </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="347076421229128098" datatype="html">
+        <source> 支持对聊天内容，发送人昵称，会话名称等进行字符串匹配搜索，搜索结果一目了然。</source>
+        <target> Support string matching search for chat content, sender nickname, chat name, etc. Search results are clear at a glance. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6634371398115271901" datatype="html">
+        <source> 文件管理 </source>
+        <target> File Management </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">85,87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">107,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8880087218508866892" datatype="html">
+        <source> 独立文件管理页面 </source>
+        <target> Independent file management page </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">90,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2154820416729277450" datatype="html">
+        <source>是否曾遇到难以下载历史文件的窘境？散乱在各处的文件类型繁多，难以追溯与定位。Parabox 采用独立的文件管理页面。提供时间，类型，文件大小等多种筛选条件。配合关键字检索，助你快速定位文件，展开工作流。</source>
+        <target> Have you ever encountered the dilemma of difficult to download historical files? The file type is complicated and scattered in various places, which is difficult to trace and locate. Parabox adopts an independent file management page. It provides multiple filtering conditions such as time, type, file size. With keyword search, it helps you quickly locate files and open up work flow. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6845267861028471639" datatype="html">
+        <source> 会话文件云端备份 </source>
+        <target> Cloud backup of chat files </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">112,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5685993147377423285" datatype="html">
+        <source> 便利地接入您喜欢的云端存储服务。在后台闲暇及网络条件允许时自动备份文件至云端，不占用本地存储空间。从此会话文件不易错过，不再丢失。</source>
+        <target> Conveniently access your favorite cloud storage service. Automatically back up files to the cloud in the background when idle and the network conditions allow, without occupying local storage space. From now on, chat files are not easy to miss and will not be lost. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">117,118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2837576574423531029" datatype="html">
+        <source> 通知 </source>
+        <target> Notification </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">129,131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6341383147630081857" datatype="html">
+        <source> 人与对话 </source>
+        <target> People and conversation </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">134,136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9171480000555038265" datatype="html">
+        <source>“人与对话”计划包含自 Android 11 后引入的一系列系统特性。如<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>对话通知，对话泡，对话微件，展开通知，快捷回复，快捷方式<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>等。Parabox 完美适配以上通知特性，带来纯粹的即时通讯体验。</source>
+        <target> The "People and Conversation" plan includes a series of system features introduced after Android 11. Such as <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/> conversation notification, conversation bubble, conversation widget, expand notification, quick reply, shortcut <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and so on. Parabox perfectly adapts to the above notification features to bring a pure instant messaging experience. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">139,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3976854991037850680" datatype="html">
+        <source> 推送 </source>
+        <target> Push </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">151,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3352032735686054024" datatype="html">
+        <source> FCM 云消息传递 </source>
+        <target> FCM Cloud Messaging </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">156,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2859135083923149201" datatype="html">
+        <source>提供<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>设备转发<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>与<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>服务器转发<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>两种 FCM 接入方案，实现零后台驻留。系统级推送服务接受系统统一调度，拥有更出色的调度机制和更佳的性能。极大节省系统资源，延长设备续航。 </source>
+        <target> Provide <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/> device forwarding <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/> server forwarding <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> two FCM access schemes, achieve zero background stay. The system-level push service accepts the system-wide scheduling, with better scheduling mechanism and better performance. Save system resources and extend device endurance. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">161,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2265061811748529493" datatype="html">
+        <source> 实验性 </source>
+        <target> Experimental </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">174,176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="904578888068429613" datatype="html">
+        <source> 机器学习加持 </source>
+        <target> Machine Learning support </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7987534779423163287" datatype="html">
+        <source>由 <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/>ML Kit<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> 提供的可离线运行的聊天内容实体提取，基于上下文的智能回复，以及多语言翻译。 </source>
+        <target> Chat content entity extraction, context-aware intelligent reply, and multi-language translation provided by <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#9FD67C&quot;&gt;"/> ML Kit <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> that can run offline. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">184,185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2220719654883266041" datatype="html">
+        <source> 模块化 </source>
+        <target> Modular </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">196,198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5648523184442793260" datatype="html">
+        <source> 定制扩展库 </source>
+        <target> Customizable extension library </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">201,203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7626429328635202022" datatype="html">
+        <source> 第三方扩展提供更丰富，更稳定的消息源。用户可根据使用习惯自行组建扩展库，不同来源的消息仍可以得到统一而高效的处理。</source>
+        <target> Third-party extensions provide richer and more stable message sources. Users can build their own extension libraries according to their usage habits, and messages from different sources can still be handled in a unified and efficient way. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">206,207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7122569230147489260" datatype="html">
+        <source>资源</source>
+        <target>Resources</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3482172733164032691" datatype="html">
+        <source>开发者工具包</source>
+        <target>Developer Toolkit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1940947087883940888" datatype="html">
+        <source>包含快速启动 Parabox 扩展开发所需的预定义类和实用程序的开发工具包。</source>
+        <target>A development toolkit that includes predefined classes and utilities required to quickly start Parabox extension development. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5629419044800658521" datatype="html">
+        <source>EFB Parabox Master</source>
+        <target>EFB Parabox Master</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8839944288805425932" datatype="html">
+        <source>用于 EH Forwarder Bot 的 Parabox 主端。需结合 Parabox WS 扩展 parabox-extension-ws 使用。</source>
+        <target>Parabox master for EH Forwarder Bot. Requires Parabox WS extension parabox-extension-ws to be used. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3354764991912843882" datatype="html">
+        <source>博客：EFB-Parabox-Master 使用教程</source>
+        <target>Blog: EFB-Parabox-Master Tutorial</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8880750070169439859" datatype="html">
+        <source>使用 EFB-Parabox-Master 和 Parabox-Extension-WS 将 Parabox 对接 EFB 的教程。</source>
+        <target>Tutorial on how to integrate Parabox with EFB using EFB-Parabox-Master and Parabox-Extension-WS. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">267</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8957825460768314124" datatype="html">
+        <source>从模板项目开始</source>
+        <target>Start from template project</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4963214296567812512" datatype="html">
+        <source>模板项目已包含开发工具包和基本的架构设置。可从中快速开始扩展开发。</source>
+        <target>The template project includes the development toolkit and basic architecture setup. You can start extension development quickly from it. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7911434494533117454" datatype="html">
+        <source>扩展</source>
+        <target>Extensions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">292</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6722885812659725719" datatype="html">
+        <source>Parabox Extension Auto</source>
+        <target>Parabox Extension Auto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3573062983566388891" datatype="html">
+        <source>结合 Android Auto 特性的通知监听。</source>
+        <target>Notification listener with Android Auto features. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4971156881549382343" datatype="html">
+        <source>Parabox Extension WS</source>
+        <target>Parabox Extension WS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5692406193184025328" datatype="html">
+        <source>允许 Parabox 通过 websocket 协议与私有服务器交换数据。</source>
+        <target>Allows Parabox to exchange data with private servers via the websocket protocol. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2727931533417803406" datatype="html">
+        <source>前往 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/topics/parabox-extension&quot; target=&quot;_blank&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Github Topic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> 获取来自社区的更多扩展。</source>
+        <target>Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/topics/parabox-extension&quot; target=&quot;_blank&quot;&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Github Topic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to get more extensions from the community. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">321,322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5739265656770780192" datatype="html">
+        <source> 即刻获取 </source>
+        <target> Get it now </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">331,333</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8262533072151674378" datatype="html">
+        <source> 感受最为纯粹与实用的原生 Android 即时通讯体验。 </source>
+        <target> Experience the most pure and practical native Android instant messaging experience. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/root/root.component.html</context>
+          <context context-type="linenumber">334,336</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5442001635420263803" datatype="html">
+        <source>更新日期：<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color: #9FD67C&quot;&gt;"/>2022年11月7日<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Update Date: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color: #9FD67C&quot;&gt;"/>November 7, 2022<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/terms/terms.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

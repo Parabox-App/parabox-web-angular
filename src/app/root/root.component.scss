@@ -287,6 +287,7 @@ $onSecondaryContainer: #D9E7CA;
   color: $onSurfaceVariant;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .feature-image {
@@ -352,11 +353,14 @@ $onSecondaryContainer: #D9E7CA;
 }
 
 .resource-card-title {
-  font-size: 22px;
+  width: 80%;
   overflow: hidden;
-  text-overflow: ellipsis;
+  padding: 0 0 15px 20px;
+}
+
+.resource-card-title span {
   white-space: nowrap;
-  padding: 0 20px 15px 20px;
+  font-size: 22px;
 }
 
 .resource-card:hover .resource-card-title {
@@ -364,11 +368,14 @@ $onSecondaryContainer: #D9E7CA;
 }
 
 .resource-card-content {
-  font-size: 16px;
+  width: 80%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   padding: 0 20px;
+}
+
+.resource-card-content span {
+  white-space: nowrap;
+  font-size: 16px;
 }
 
 .extension {
@@ -446,22 +453,25 @@ $onSecondaryContainer: #D9E7CA;
 
 .download-title {
   font-size: 42px;
+  margin: 0 20px 10px 20px;
   font-weight: normal;
   font-family: "Google Sans Display", "Microsoft YaHei", serif;
 }
 
 .download-content {
   font-size: 16px;
+  margin: 0 20px;
   color: $onSurfaceVariant;
+  line-height: 1.5;
   font-family: "Google Sans Text", "Microsoft YaHei", serif;
 }
 
 .download-detail .button-filled {
-  margin: 36px 0 0 0;
+  margin: 36px 20px 0 20px;
 }
 
 .download-detail .button-outlined {
-  margin: 16px 0 0 0;
+  margin: 16px 20px 0 20px;
 }
 
 .download .button-filled fa-icon {

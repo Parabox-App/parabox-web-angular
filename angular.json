@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/parabox-web-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -39,8 +40,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",
+                  "maximumError": "8kb"
                 }
               ],
               "outputHashing": "all"
@@ -52,6 +53,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +68,9 @@
             },
             "development": {
               "browserTarget": "parabox-web-angular:build:development"
+            },
+            "en": {
+              "browserTarget": "parabox-web-angular:build:development,en"
             }
           },
           "defaultConfiguration": "development"
@@ -91,6 +98,14 @@
               "src/theme.scss"
             ],
             "scripts": []
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale": "zh-Hans",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
           }
         }
       }

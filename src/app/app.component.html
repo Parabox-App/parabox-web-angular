@@ -22,22 +22,22 @@
       <div style="height: 74px;"></div>
       <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
         <div class="nav-item" (click)="scrollToTop()" [class.nav-item-selected]="url == '/'">
-          <span class="nav-item-text" >主页</span>
+          <span i18n class="nav-item-text" >主页</span>
         </div>
       </a>
       <a href="https://docs.parabox.ojhdt.dev/" target="_blank">
         <div class="nav-item">
-          <span class="nav-item-text">文档</span>
+          <span i18n class="nav-item-text">文档</span>
         </div>
       </a>
       <a routerLink="/terms" routerLinkActive="active" ariaCurrentWhenActive="page">
         <div class="nav-item" [class.nav-item-selected]="url == '/terms'">
-          <span class="nav-item-text">用户协议</span>
+          <span i18n class="nav-item-text">用户协议</span>
         </div>
       </a>
       <a routerLink="/privacy" routerLinkActive="active" ariaCurrentWhenActive="page">
         <div class="nav-item" [class.nav-item-selected]="url == '/privacy'">
-          <span class="nav-item-text">隐私政策</span>
+          <span i18n class="nav-item-text">隐私政策</span>
         </div>
       </a>
     </div>
@@ -48,7 +48,7 @@
       <div class="bottom-block-icon">`
         <img src="./assets/favicon.png" alt="icon">
       </div>
-      <div class="bottom-block-content">
+      <div i18n class="bottom-block-content">
         Parabox 是一款界面友好，功能完善，可拓展的即时通讯客户端。界面遵循 Material You 设计语言。
       </div>
       <!--      <div class="bottom-block-buttons">-->
